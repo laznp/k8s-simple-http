@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: simple-http-deployment
+spec:
+  selector:
+    matchLabels:
+      app: simple-http
+  replicas: 2
+  template:
+    metadata:
+      labels:
+        app: simple-http
+    spec:
+      containers:
+      - name: simple-http
+        image: docker.laznp.id/simple-http:1.0
+        ports:
+        - containerPort: 8080
+
+
