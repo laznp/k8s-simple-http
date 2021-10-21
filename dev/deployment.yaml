@@ -16,6 +16,8 @@ spec:
       - name: simple-http
         image: docker.laznp.id/simple-http:1.0
         ports:
-        - containerPort: 8080
+          - containerPort: 8080
+      imagePullSecrets:
+      - name: regcred
 
 
