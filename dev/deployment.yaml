@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: simple-http
-        image: docker.laznp.id/simple-http:1.0
+        image: docker.laznp.id/simple-http:1.1
         ports:
           - containerPort: 8080
       imagePullSecrets:
